@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragment_MainMenu">
+
+    <fragment
+        android:id="@+id/fragment_MainMenu"
+        android:name="com.cromero.jetpackbrowseretccristianromero.fragment_MainMenu"
+        android:label="fragment__main_menu"
+        tools:layout="@layout/fragment__main_menu" >
+        <action
+            android:id="@+id/acCalc"
+            app:destination="@id/frCalc" />
+        <action
+            android:id="@+id/action_fragment_MainMenu_to_frBrowser"
+            app:destination="@id/frBrowser" />
+        <action
+            android:id="@+id/acCamera"
+            app:destination="@id/frCamera" />
+    </fragment>
+    <fragment
+        android:id="@+id/frCalc"
+        android:name="com.cromero.jetpackbrowseretccristianromero.CalcFragment"
+        android:label="fragment_calc"
+        tools:layout="@layout/fragment_calc" >
+        <action
+            android:id="@+id/acMulti"
+            app:destination="@id/frResult" />
+    </fragment>
+    <fragment
+        android:id="@+id/frBrowser"
+        android:name="com.cromero.jetpackbrowseretccristianromero.frBrowser"
+        android:label="fragment_fr_browser"
+        tools:layout="@layout/fragment_fr_browser" />
+    <fragment
+        android:id="@+id/frCamera"
+        android:name="com.cromero.jetpackbrowseretccristianromero.frCamera"
+        android:label="fragment_fr_camera"
+        tools:layout="@layout/fragment_fr_camera" />
+    <fragment
+        android:id="@+id/frResult"
+        android:name="com.cromero.jetpackbrowseretccristianromero.frMulti"
+        android:label="fragment_fr_multi"
+        tools:layout="@layout/fragment_fr_multi" />
+</navigation>
