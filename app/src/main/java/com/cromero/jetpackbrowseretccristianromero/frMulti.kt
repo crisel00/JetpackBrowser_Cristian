@@ -28,7 +28,6 @@ class frMulti : Fragment() {
             param1 = it.getString(ARG_PARAM1)
             param2 = it.getString(ARG_PARAM2)
         }
-
     }
 
     override fun onCreateView(
@@ -36,9 +35,14 @@ class frMulti : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
+
         return inflater.inflate(R.layout.fragment_fr_multi, container, false)
-        tv_ResultMulti.text = arguments?.getString("amount")
-        return tv_ResultMulti
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        tv_ResultMulti.text = arguments?.getInt("RESULT").toString()
     }
 
     companion object {

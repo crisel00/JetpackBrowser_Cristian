@@ -10,17 +10,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/tv_cam_estatus"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Pulsa para sacar una foto"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.72" />
-
         <Button
             android:id="@+id/bFoto"
             android:layout_width="wrap_content"
@@ -32,17 +21,18 @@
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_cam_estatus"
-            app:layout_constraintVertical_bias="0.172" />
+            app:layout_constraintVertical_bias="0.061" />
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="375dp"
-            android:layout_height="483dp"
-            android:src="@drawable/ic_launcher_background"
-            app:layout_constraintBottom_toTopOf="@+id/tv_cam_estatus"
+        <TextView
+            android:id="@+id/tv_cam_estatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pulsa para sacar una foto"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.114" />
+            app:layout_constraintVertical_bias="0.341" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>

@@ -14,7 +14,7 @@
             android:id="@+id/acCalc"
             app:destination="@id/frCalc" />
         <action
-            android:id="@+id/action_fragment_MainMenu_to_frBrowser"
+            android:id="@+id/acBrowser"
             app:destination="@id/frBrowser" />
         <action
             android:id="@+id/acCamera"
